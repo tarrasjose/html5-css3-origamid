@@ -1,0 +1,14 @@
+span {
+  display: inline-block;
+  /* inline-block para pegar todos os valores de padding margin, por padrão ele é inline, então esses valores não pegariam */
+  background: #ddd;
+}
+
+span {
+  padding: 30px;
+  padding: 20px 40px;
+  padding: 40px 100px 200px 10px;
+  border: 10px solid black;
+  border-width: 40px 10px; /*para cima e baixo e laterais*/
+  
+}

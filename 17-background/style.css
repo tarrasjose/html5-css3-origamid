@@ -1,0 +1,25 @@
+.bicicleta {
+  height: 600px;
+  background-color: lightblue;
+  background-image: url('./img/bicicleta.jpg');
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  /* background-size: contain;  */
+  /*contain: é basicamente como se tivesse colocado 100%  */
+  background-size: cover;
+  /* o cover vai cobrir a area toda */
+  background-position: center; 
+  /* usando o cover mais o position center, ele vai cortar as as laterais mais mantendo o centro da imagem */
+  /* background-position: center top;  */
+
+  display: flex;
+}
+
+h1 {
+  /* margin: 0 auto; */
+  /* 0 para cima e para baixo e auto para os lados */
+  margin: auto;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}

@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.item {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid; 
+  /*Só colocando isto, ainda não acontece nada, pois por padrão o grid tem uma coluna apenas, você tem que definir que quer mais de uma coluna */
+  grid-template-columns: 1fr 1fr; /*pode usar 1fr 2fr*/
+   /*Essa define o número de colunas, usar porcentagem vem com muitos problemas, por isso a fr é a melhor opção neste caso*/
+  gap: 20px; 
+  /*gap vai colocar uma margin para os lados*/
+}

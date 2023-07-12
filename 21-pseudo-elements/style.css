@@ -1,0 +1,103 @@
+/* Vamos usar o before e after normalmente para decoração */
+/* h1::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+/* /////////////////////// */
+
+/* Este coloca acima before antes, pois é um elemento de bloco ocupando de ponta a ponta */
+/* h1::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+/* ///////////////////////// */
+
+/* Este coloca abaixo after depois, pois é um elemento de bloco ocupando a linha de ponta a ponta*/
+/* h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+} */
+
+
+/* //////////////////////// */
+
+/* h1 {
+  position: relative;
+} */
+/* Por ter colocado o after como position abosolute, o pai que é o h1 tem que ser position relative */
+/* h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+
+  position: absolute;
+  top: 20px;
+
+  z-index: -1;
+} */
+/* Se quiser atrás do elemento z-index -1 */
+
+/* /////////////////////// */
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+  margin-right: 10px;
+}
+
+/* //////////////////// */
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+/* Se quiser alinhar a bolinha com no meio das palavras da lista, podemos usar o flex e o align items center */
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(lightblue, lightCoral);
+  border: 2px solid #caf;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+/* Se quiser arrendodar nosso quadrado é só colocar 50% no border-radius */
+
+
+/* //////////////////////// */
+/* Seleciona a primeira linha, só que ele é dinamico, conforme a letras mudam de linha já não está selecionada*/
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2rem;
+  color: blue;
+}
+

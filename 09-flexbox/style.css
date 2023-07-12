@@ -1,0 +1,30 @@
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* height: 100vh;
+  justify-content: center;
+  align-content: center;
+  place-content: center; Atalho para justify-content */
+}
+
+h2 {
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+  margin: 0px;
+  flex-grow: 1;
+  /*Flex-grow cresça, distribui o espaço branco com os elementos*/
+  flex-basis: auto; /* flex-basis: 0 Todos elementos vao igualar tamanho*/
+  flex-shrink: 1; /*Flex-shrink:0 E o flex-basis: auto não deixou o conteudo quebrar*/
+  flex: 1; /*flex: 1; Atalho para todos acima, flex-grow:1 quero que cresça, flex-shrink: 1 pode diminuir caso tenha que quebrar, flex-basis: 0% ele vai informar que o espaço distribuido pelo flex-grow deve ser igual entre os elementos*/
+}
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, /*minmax(150px, 300px)*/200px);
+  /*auto-fit tente encaixar quantos itens for possivel.*/
+  /*minmax(min,max) é para deixar flexivel*/
+  gap: 20px;
+}

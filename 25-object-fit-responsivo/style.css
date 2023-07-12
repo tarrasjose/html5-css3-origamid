@@ -1,0 +1,24 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cover img {
+  height: 100%;
+  /* Os 100% de altura de acordo com os dois paragrafos */
+  object-fit: cover;
+  /* irá cortar a imagem sem perder a qualidade.*/
+  object-position: top right;
+  /* Aqui está a partir de qual posição mostrará */
+}
+
+p {
+  font-size: 1.5rem;
+
+}

@@ -1,0 +1,10 @@
+body {
+	color: seagreen;
+}
+/* Colocando a cor no body, não mudou a cor no link e também no botão, se clicar no link por exemplo no inspecionar, verá que por padrão o link possui uma cor especifica -webkit-link*/
+
+a {
+	color: inherit;
+}
+/* Para mudar cor do a como foi pedido no body, podemos colocar a cor aqui também ou simplesmente colocar em color inherit, que significa herdar */
+

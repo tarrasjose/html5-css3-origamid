@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+  color: white;
+  background: darkblue;
+  display: inline-block;
+}
+
+p {
+  background: lightblue;
+}
+
+/* html {
+  font-size: 32px;
+} */
+
+.px {
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+.rem {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+/* O rem respeita a vontade do usuario, por exemplo, se ele quiser aumentar o tamanho das letras nas configurações, já o pix não, o pix respeita o zoom, que caso for usado, não está errado tamabém, é só uma questão de se cercar */
+/* Se o tamanho é 24px, basta dividir 24/16=1.5rem */
+
+
+/* //////////////////// */
+section {
+  font-size: 200%;
+}
+
+.px2 {
+  font-size: 32px;
+}
+
+.em {
+  font-size: 2em;
+}
+/* O em é em relação ao elemento pai e também a raiz, o html.
+Então por isso, o mais recomendado é o rem.
+*/
+
+.rem2 {
+  font-size: 2rem;
+}
+/* O rem é em relação a raiz, o html */

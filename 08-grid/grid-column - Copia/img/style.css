@@ -1,0 +1,14 @@
+img {
+  max-width: 100%;
+  display: block;
+  /* As imagens possuem por padrão, cerca de 4px de distância entre elas, isso colocado porque a imagem por padrão é display inline-block, se colocar como display block os 4px não vai mais existit */
+}
+
+div {
+  width: 300px;
+}
+
+.foto {
+  width: 150px;
+}
+/* No caso desta foto menor, foi colocado o width, metade do tamanho dela e ela não ficou borrada */

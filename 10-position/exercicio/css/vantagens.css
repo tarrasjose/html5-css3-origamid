@@ -1,0 +1,49 @@
+
+.vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.vantagens__titulo {
+  font-size: 64px;
+  grid-row: 1 / 4;
+}
+
+.vantagens__conteudo {
+  padding: 20px;
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 10px;
+
+ 
+}
+
+.vantagens__conteudo img {
+  grid-row: 1 / 1 ;
+
+}
+
+.vantagens__conteudo h3 {
+  text-align: start;
+  margin: 0;
+}
+
+.vantagens__conteudo p {
+  text-align: start;
+  grid-column: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.vantagens__conteudo p {
+  font-size: 20px;
+}
+
+
+
+

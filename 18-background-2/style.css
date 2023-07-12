@@ -1,0 +1,70 @@
+.bicicleta {
+  height: 600px;
+  background-color: lightblue;
+  background-image: url('./img/bicicleta.jpg');
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  /* background-size: contain;  */
+  /*contain: é basicamente como se tivesse colocado 100%  */
+  background-size: cover;
+  /* o cover vai cobrir a area toda */
+  background-position: center; 
+  /* usando o cover mais o position center, ele vai cortar as as laterais mais mantendo o centro da imagem */
+  /* background-position: center top;  */
+
+  display: flex;
+}
+
+h1 {
+  /* margin: 0 auto; */
+  /* 0 para cima e para baixo e auto para os lados */
+  margin: auto;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.pattern {
+  height: 300px;
+  background-color: lightcoral;
+  background-image: url("./img/pattern.svg");
+
+  /* por padrão ela se repete */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-size: 100px;  */
+
+  /* background de 100px aumenta as bolinhas, por padrão elas tem 20px e por ser svg a imagem não perde a qualidade */
+}
+
+.linear {
+  height: 200px;
+  /* background-image: linear-gradient(lightblue, lightcoral); */
+  /* por padrão ele vai de cima para baixo */
+
+  /* background-image: linear-gradient(to left, lightblue, lightcoral); */
+  /* para esquerda */
+  /* background-image: linear-gradient(to right, lightblue, lightcoral); */
+  /* para a direita */
+  
+  /* background-image: linear-gradient(45deg, lightblue, lightcoral); */
+  /* vindo da pontinha de baixo esquerda para a pontinha de cima esquerda  */
+
+  background-image: linear-gradient(
+    lightblue, 
+    lightcoral, 
+    rgba(255, 0, 0, 0.821),
+    rgba(0, 0, 0, 0.79) 50%
+    );
+  /* pode usar diversas cores por vez */
+  /* 50% de onde deve começar  */
+}
+
+.radial {
+  height: 200px;
+  /* background-image: radial-gradient(lightblue, lightcoral, black); */
+
+  background-image: radial-gradient(circle, lightblue, lightcoral, black);
+  /* o de era oval, este é um circulo mesmo */
+}

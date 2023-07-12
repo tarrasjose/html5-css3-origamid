@@ -1,0 +1,198 @@
+/* # Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  background: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+
+
+}
+
+.introducao {
+  background: #ffffff;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+}
+
+.detalhe {
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  /* display: inline-block;  Não precisa pois transformamos ele em display grid e vai receber valores de width e height*/
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.botao {
+  background: #e21;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* /////////////////////// */
+
+.subtitulo {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.vantagens {
+  background: #ffffff;
+  padding: 40px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px; 
+  /* O primeiro é a distâcncia entre linha e o segundo entre as colunas */
+  padding: 20px;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+/* //////////////////// */
+
+
+.rodape {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box; 
+  /* Border-box para o conteudo não quebre além dos 100% de width, se não somaria os 100% + 40px */
+}
+
+
+/* .introducao {
+  background: #ffffff;
+  padding: 40px;
+  text-align: end;
+}
+
+.introducao h1{
+  padding: 20px;
+
+}
+
+.introducao p {
+  padding: 30px;
+}
+
+.introducao a {
+  background: #ee2211;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ///////////////// */
+/* .vantagens {
+  background: #ffffff;
+  padding: 40px;
+}
+
+.subtitulo {
+  color: #c6c6c6;
+  font-size: 64px;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: end;
+  padding: 30px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.vantagens-item img {
+  grid-row: 1 /3; */
+} */
+
+/* /////////////////////// */
+/* .rodape {
+  background: #ffffff;
+  padding: 40px 360px;
+} */
+

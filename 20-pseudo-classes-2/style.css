@@ -1,0 +1,54 @@
+/* .lista-1 li {
+  background: #caf !import;
+} */
+/* Seleciona toda li na lista-1 */
+/* Usando !important diz que deve ser escrito por cima de qualquer elemento */
+
+.lista-1 li:first-child {
+  background: #caf;
+}
+/* Seleciona a primeira li na lista-1 */
+
+.lista-1 li:last-child {
+  background: #cfa;
+}
+/* Seleciona o ultimo li na lista-1 */
+
+.lista-1 li:nth-child(3) {
+  background: lightcoral;
+}
+/* Seleciona o número que quiser, no caso foi o 3 na lista 1 */
+
+.lista-2 li:nth-child(even) {
+  background: #cfa;
+}
+/* even seleciona todos elementos pares usado na lista 3 */
+
+.lista-3 li:nth-child(odd) {
+  background: #cfa;
+}
+/* odd seleciona todos elementos impares usado na lista 4 */
+
+.lista-4 li:nth-child(3n) {
+  background: #cfa;
+}
+/* seleciona todo 3 elemento, iria 3, 6, 9, 12, 15 usado na lista 5 */
+
+/* DICA: Não tem relação nenhuma ol e li, podia ser uma lista de div que selecionaria*/
+
+.lista-5 li:not(:first-child, :last-child, .terceiro) {
+  background: #caf;
+}
+/* Usando o not negará o que não quer, no caso o primeiro filho da lista e o ultimo, depois a class terceiro do terceiro item
+not colado significa do li */
+
+.lista-5 li.terceiro {
+  color: coral;
+}
+
+/* Quando está colado assim li.terceiro está selecionado todo li que tiver a class terceiro */
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
+/* coloque underline em todos que não tiver a class contato */

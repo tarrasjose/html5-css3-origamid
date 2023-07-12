@@ -1,0 +1,26 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 400px) {
+  /* acima de 400px a imagem vai ficar na linha 2 */
+  .minmax img {
+    /* grid-row: 2; */
+    order: 2;
+  }
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+p {
+  font-size: 2rem;
+}

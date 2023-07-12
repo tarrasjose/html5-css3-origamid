@@ -1,0 +1,35 @@
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.bicicletas__info {
+  font-size: 20px;
+}
+
+.bicicleta__imagem {
+  max-width: 100%;
+}
+
+.bicicleta__botao {
+  background: #ee2211;
+  text-decoration: none;
+  color: #f7f7f7;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.bicicleta {
+  background: #FFFFFF;
+  text-align: end;
+  padding: 50px;
+}
+
+.detalhe {
+  border: 10px solid red;
+  position: relative;
+  top: 1px;
+  left: 60px;
+}

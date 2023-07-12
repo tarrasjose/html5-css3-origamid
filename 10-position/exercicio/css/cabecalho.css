@@ -1,0 +1,27 @@
+.cabecalho {
+  padding: 20px;
+}
+
+.cabecalho__titulo {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu__lista {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.menu__item {
+  list-style: none;
+  background: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}

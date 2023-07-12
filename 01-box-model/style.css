@@ -1,0 +1,21 @@
+body {
+  margin: 0;  
+}
+
+div {
+	background: #aaa;
+	/* width: auto; O auto significa pegue o tamanho total do elemento pai, no caso body está pegando 100% da tela*/
+	width: 140px;
+	height: 80px;
+	padding: 30px;
+	border: 10px solid #111;
+	margin: 30px;
+}
+
+h1 {
+	background: #84e;
+	padding: 20px;
+	border: 4px solid #111;
+	margin: 20px; 
+	/* Como colocamos margin na div acima e margin agora no h1, o que tiver a maior margin vencerá, no caso seguirá a margin da div */
+}

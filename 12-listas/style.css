@@ -1,0 +1,18 @@
+body {
+  margin: 20px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  /* list-style: square; quadradinho */
+  /* list-style: url(); imagem */
+  /* list-style: square inside; inside signica que agora vai ser dentro do elemento */
+  list-style: none;
+}
+
+dl,
+dd {
+  margin: 0;
+}
+
