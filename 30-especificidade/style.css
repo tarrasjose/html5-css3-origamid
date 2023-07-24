@@ -1,0 +1,42 @@
+body {
+  font-size: 2rem;
+}
+
+/* Mesmo declarado antes, o titulo que tem #produtos continuará lightgreen, mesmo .titulo colocando a cor tomato, pois id tem especificidade maior nivel 1  */
+#produtos {
+  color: lightgreen;
+}
+
+.titulo {
+  color: tomato;
+  padding: 10px;
+}
+
+/* Esse abaixo vai sobrescrever o tomato de cima por blue, pois os dois tem a mesma especividade, mas esse escrito depois */
+.titulo {
+  color: blue;
+}
+
+/* se colocar .titulo.teste acima de .titulo a cor continuará aqua sobrescrevendo o blue, pois agora eu tenho dois seletores de nivel 2, perderia para o id independente do numero de classes  */
+.titulo.teste {
+  color: aqua;
+}
+
+html body section h2 {
+  border-left: 8px solid lightgreen;
+}
+/* Aqui continuará lightgreen pois a especividade foi maior em cima do que em baixo */
+body section h2 {
+  border-left: 8px solid lightcoral;
+}
+
+/* Se colocar o !important ele passará por cima de todos, pois o important é mais importante do que qualquer especividade de seletor */
+/* h2 {
+  color: black !important;
+} */
+/* se tiver um #id com !important lá em cima, aí volta a disputa por especividade  */
+/* Não abuse do !important */
+
+/* Se lá em cima tive uma border-top no h2 e eu mudasse a color para outra cor com um !important na frente mudaria, mas continuaria a border-top, teria que tirar ela caso quisesse */
+
+

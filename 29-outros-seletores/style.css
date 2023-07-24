@@ -1,0 +1,68 @@
+/* Aqui seleciona todos que tiverem required */
+[required] {
+  border: 2px solid tomato;
+}
+
+[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+/* podia ser assim também, um a que tem href="#contato" */
+a[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+
+/* se utilizasse assim não functionaria, pois é um a que tem um elemento dentro que tem o href="#contato" */
+a [href="#contato"] {
+  border: 2px solid lightblue;
+}
+
+/* seleciona um href que começa^ com = "#"*/
+[href^="#"] {
+  background: tomato;
+  padding: 5px 10px;
+}
+
+/* seleciona href que termina $ com = ".com" */
+[href$=".com"] {
+  background: green;
+}
+
+/* seleciona h2 dentro de section, só que esse pinta todos que estão dentro de section */
+/* section h2 {
+  color: tomato;
+} */
+
+/* Se eu quiser apenas um filho direto, eu faço assim */
+section > h2 {
+  color: tomato;
+}
+
+
+
+p {
+  margin: 0;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+/* p {
+  margin-bottom: 20px;
+} */
+
+/* seleciona o ultimo p */
+/* article p:last-child {
+  margin-bottom: 0px;
+} */
+
+/* só vai selecionar p que vier após outro p, o primeiro p não é selecionado, pois ele não tem um p antes dele */
+p + p {
+  margin-top: 20px;
+}
+
+/* Este seleciona todos elementos da tela */
+* {
+  
+}

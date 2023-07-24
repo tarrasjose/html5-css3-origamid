@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+input {
+  font-size: 1.2rem;
+  /* o input começa com um valor menor que 16px, sempre bom colocar em valor acima de 1rem, no iphone se detectado uma fonte pequena ele da um zoom e quebra o layout */
+  padding: 10px;
+}
+
+
+.checkbox,
+.radio {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.checkbox label,
+.radio label {
+  margin: 0px;
+  display: inline-block;
+}
+
+.checkbox input,
+.radio input  {
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+/* o select é algo complexo para estilizar, mas fazendo isso abaixo já funciona bem  */
+select {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+textarea {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  /* ele não herda a font-family */
+}
+
+button {
+  font-size: 2rem;
+  /* margin-top: 30px; */
+  display: block;
+  padding: 10px 20px;
+  background: #caf;
+  border: none;
+  color: #217;
+  /* font-weight: 700; */
+  border-radius: 4px;
+  cursor: pointer;
+}
