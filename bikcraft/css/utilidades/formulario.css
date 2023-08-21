@@ -1,0 +1,50 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+/* cria uma classe para usar onde quer que se expanda até a coluna 2 */
+.form .col-2 {
+  grid-column: span 2;
+}
+
+/* importante na hora de estilizar o input é especificar qual input, pois existem vários */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-2);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  /* o problema de usar 100% é que ele soma o padding também e estourou o tamanho, então para resolver é usar box-sizing border box */
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  /* tira o foco e define um */
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+} 
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  /* só mudando para 1fr não funcionará pois tem elemento forçando duas colunas e continuará criando 2 colunas, então precisa alterar ele. */
+  .form .col-2 {
+    grid-column: 1;
+  }
+}

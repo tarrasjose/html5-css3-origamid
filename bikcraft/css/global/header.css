@@ -1,0 +1,75 @@
+.header-bg {
+  background-color: var(--cor-12);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  /* wrap para o menu quebrar linha */
+  gap: 20px;
+  /* Esse gap vai ajudar quando a tela for menor a logo e o menu não ficarão grudados como estava. */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  padding: 16px 0px;
+  /* Este padding é simplesmente para aumentar a area de contato para usar o dedo */
+  display: inline-block;
+  /* inline-block porque quando este botao cair um pra baixo do outro não iria funcionar direito */
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  /* Ele começa com 0 de width e vai a 100% definido no outro after abaixo */
+  background: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+  /* o position absolute foi usado para não ocupar nenhum espaço e perder o alinhamento com o menu */
+}
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
+  width: 100%;
+  /* vai a 100% com 0.3s definido acima */
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: var(--cor-11);
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background-color: var(--cor-10);
+  }
+  .header a:after {
+    display: none;
+  }
+}
+
+/* Sempre vou colocar um valor bem acima do que começa quebrar */
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

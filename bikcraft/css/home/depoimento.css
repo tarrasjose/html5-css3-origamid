@@ -1,0 +1,71 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p1);
+  overflow: hidden;
+  /* hidden pra que toda vez que ele for estourar o container, ele vai esconder e não gera a barra */
+}
+
+.depoimento img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* lembrando que object-fit: cover é só pra imagem que pode ser cortada, se tiver uma imagem de um produto se usar isso vai cortar parte do produto  */
+}
+
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
+}
+
+.depoimento-conteudo p {
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento p::before,
+.depoimento p::after {
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+}
+
+.depoimento p::before {
+  content: "“";
+  /* relative ao pai p */
+  left: -50px;
+  top: -20px;
+}
+
+.depoimento p::after {
+  content: "”";
+}
+
+@media (min-width: 1200px) {
+  /* para o depoimento não crescer infinitamente, colocamos um max-height para a imagem, pois a imagem que est[a fazendo o depoimento crescer */
+  .depoimento img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento img {
+    max-height: 200px;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    /* é conteudo grid, por padrao ele fica no incio, então vamos justificar ao centro */
+    justify-self: center;
+  }
+}
